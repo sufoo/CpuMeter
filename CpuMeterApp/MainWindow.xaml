@@ -1,0 +1,92 @@
+﻿<Window x:Class="CpuMeterApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:lib="clr-namespace:CpuMeterApp"
+        Title="CPU Meter" 
+        mc:Ignorable="d" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        SizeToContent="Manual" Height="1352" Width="250" AllowsTransparency="True" WindowStyle="None" Background="{x:Null}" ResizeMode="CanResizeWithGrip">
+    <Grid Background="#FF282828" Name="MainPanel">
+        <Grid.ContextMenu>
+            <ContextMenu>
+                <MenuItem Header="Setting" Click="MenuSettingClicked" />
+                <MenuItem Header="Always on top" Click="MenuAlwaysOnTopClicked" Name="MenuAlwaysOnTop"/>
+                <MenuItem Header="About this software" Click="MenuAboutClicked" />
+                <MenuItem Header="Exit" Click="ExitClicked" />
+            </ContextMenu>
+        </Grid.ContextMenu>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="12" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="12" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="12" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="12" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="12" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="12" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="12" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="12" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="12" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="12" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="12" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="12" />
+            <RowDefinition Height="10*" />
+            <RowDefinition Height="12" />
+            <RowDefinition Height="10*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10*" />
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="10*" />
+        </Grid.ColumnDefinitions>
+        <lib:BoeingMeter x:Name="Meter0" Grid.Row="1" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter1" Grid.Row="1" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter2" Grid.Row="3" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter3" Grid.Row="3" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter4" Grid.Row="5" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter5" Grid.Row="5" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter6" Grid.Row="7" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter7" Grid.Row="7" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter8" Grid.Row="9" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter9" Grid.Row="9" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter10" Grid.Row="11" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter11" Grid.Row="11" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter12" Grid.Row="13" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter13" Grid.Row="13" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter14" Grid.Row="15" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter15" Grid.Row="15" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter16" Grid.Row="17" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter17" Grid.Row="17" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter18" Grid.Row="19" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter19" Grid.Row="19" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter20" Grid.Row="21" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter21" Grid.Row="21" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter22" Grid.Row="23" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter23" Grid.Row="23" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter24" Grid.Row="25" Grid.Column="0" VerticalContentAlignment="Center" HorizontalContentAlignment="Right"></lib:BoeingMeter>
+        <lib:BoeingMeter x:Name="Meter25" Grid.Row="25" Grid.Column="2" VerticalContentAlignment="Center" HorizontalContentAlignment="Left"></lib:BoeingMeter>
+        <Label Content="Label" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" HorizontalAlignment="Center" Name="label0" VerticalAlignment="Bottom" Foreground="White" FontFamily="Arial" Padding="0" FontSize="12" />
+        <Label Content="Label" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="3" HorizontalAlignment="Center" Name="label1" VerticalAlignment="Bottom" Foreground="White" FontFamily="Arial" Padding="0" FontSize="12" />
+        <Label Content="Label" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="3" HorizontalAlignment="Center" Name="label2" VerticalAlignment="Bottom" Foreground="White" FontFamily="Arial" Padding="0" FontSize="12" />
+        <Label Content="Label" Grid.Column="0" Grid.Row="6" Grid.ColumnSpan="3" HorizontalAlignment="Center" Name="label3" VerticalAlignment="Bottom" Foreground="White" FontFamily="Arial" Padding="0" FontSize="12" />
+        <Label Content="Label" Grid.Column="0" Grid.Row="8" Grid.ColumnSpan="3" HorizontalAlignment="Center" Name="label4" VerticalAlignment="Bottom" Foreground="White" FontFamily="Arial" Padding="0" FontSize="12" />
+        <Label Content="Label" Grid.Column="0" Grid.Row="10" Grid.ColumnSpan="3" HorizontalAlignment="Center" Name="label5" VerticalAlignment="Bottom" Foreground="White" FontFamily="Arial" Padding="0" FontSize="12" />
+        <Label Content="Label" Grid.Column="0" Grid.Row="12" Grid.ColumnSpan="3" HorizontalAlignment="Center" Name="label6" VerticalAlignment="Bottom" Foreground="White" FontFamily="Arial" Padding="0" FontSize="12" />
+        <Label Content="Label" Grid.Column="0" Grid.Row="14" Grid.ColumnSpan="3" HorizontalAlignment="Center" Name="label7" VerticalAlignment="Bottom" Foreground="White" FontFamily="Arial" Padding="0" FontSize="12" />
+        <Label Content="Label" Grid.Column="0" Grid.Row="16" Grid.ColumnSpan="3" HorizontalAlignment="Center" Name="label8" VerticalAlignment="Bottom" Foreground="White" FontFamily="Arial" Padding="0" FontSize="12" />
+        <Label Content="Label" Grid.Column="0" Grid.Row="18" Grid.ColumnSpan="3" HorizontalAlignment="Center" Name="label9" VerticalAlignment="Bottom" Foreground="White" FontFamily="Arial" Padding="0" FontSize="12" />
+        <Label Content="Label" Grid.Column="0" Grid.Row="20" Grid.ColumnSpan="3" HorizontalAlignment="Center" Name="label10" VerticalAlignment="Bottom" Foreground="White" FontFamily="Arial" Padding="0" FontSize="12" />
+        <Label Content="Label" Grid.Column="0" Grid.Row="22" Grid.ColumnSpan="3" HorizontalAlignment="Center" Name="label11" VerticalAlignment="Bottom" Foreground="White" FontFamily="Arial" Padding="0" FontSize="12" />
+        <Label Content="Label" Grid.Column="0" Grid.Row="24" Grid.ColumnSpan="3" HorizontalAlignment="Center" Name="label12" VerticalAlignment="Bottom" Foreground="White" FontFamily="Arial" Padding="0" FontSize="12" />
+    </Grid>
+</Window>
